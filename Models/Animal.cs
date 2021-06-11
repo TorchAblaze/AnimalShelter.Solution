@@ -22,7 +22,7 @@ namespace Shelter.Models
     [Required]
     public bool HasShots { get; set; }
     [Required]
-    [Range(0, 10, ErrorMessage = "Fluffliness Level must be between 0 and 10.")]
-    public int FlufflinessLevel { get; set; }
+    [Range(0, 10, ErrorMessage = "Fluffiness Level must be between 0 and 10.")]
+    public int FluffinessLevel { get; set; }
   }
 }
