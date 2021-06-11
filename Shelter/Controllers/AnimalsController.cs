@@ -18,7 +18,7 @@ namespace Shelter.Controllers
     }
 
     [HttpGet]
-    public ActionResult<IEnumberable<Animal>> Get(string name, string adoptionStatus, string type, int fluffinessLevel)
+    public ActionResult<IEnumerable<Animal>> Get(string name, string adoptionStatus, string type, int fluffinessLevel)
     {
       var query = _db.Animals.AsQueryable();
 
@@ -39,7 +39,7 @@ namespace Shelter.Controllers
 
       if (fluffinessLevel != null)
       {
-        query = query.Where(entry => entry.FluffinessLevel == fluffinessLevel)
+        query = query.Where(entry => entry.FluffinessLevel == fluffinessLevel);
       }
 
       return query.ToList();
