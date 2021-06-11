@@ -7,7 +7,7 @@ using System.Linq;
 
 namespace Shelter.Controllers
 {
-  [Route("api/[controller")]
+  [Route("api/[controller]")]
   [ApiController]
   public class AnimalsController : ControllerBase
   {
@@ -18,14 +18,9 @@ namespace Shelter.Controllers
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Animal>> Get(string name, string adoptionStatus, string type, int fluffinessLevel)
+    public ActionResult<IEnumerable<Animal>> Get(string adoptionStatus, string type, int fluffinessLevel)
     {
       var query = _db.Animals.AsQueryable();
-
-      if (name != null)
-      {
-        query = query.Where(entry => entry.Name == name);
-      }
 
       if (adoptionStatus != null)
       {
