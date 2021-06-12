@@ -8,7 +8,7 @@ using Shelter.Models;
 namespace Shelter.Migrations
 {
     [DbContext(typeof(ShelterContext))]
-    [Migration("20210611212752_SeedData")]
+    [Migration("20210611234439_SeedData")]
     partial class SeedData
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

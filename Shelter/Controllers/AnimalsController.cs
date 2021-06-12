@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Shelter.Models;
 using System.Linq;
+using Microsoft.AspNetCore.Http;
+using System;
 
 namespace Shelter.Controllers
 {
@@ -18,7 +20,7 @@ namespace Shelter.Controllers
     }
 
     [HttpGet]
-    public ActionResult<IEnumerable<Animal>> Get(string adoptionStatus, string type, int fluffinessLevel)
+    public async Task<ActionResult<IEnumerable<Animal>>> Get(string adoptionStatus, string type, int fluffinessLevel)
     {
       var query = _db.Animals.AsQueryable();
 
@@ -37,7 +39,7 @@ namespace Shelter.Controllers
         query = query.Where(entry => entry.FluffinessLevel == fluffinessLevel);
       }
 
-      return query.ToList();
+      return await query.ToListAsync();
     }
 
     [HttpGet("{id}")]
