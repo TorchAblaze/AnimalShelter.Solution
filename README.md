@@ -37,22 +37,14 @@ An API that stores animal information for the pets available at an animal shelte
       },
       "AllowedHosts": "*",
       "ConnectionStrings": {
-        "DefaultConnection": "Server=localhost;Port=3306;database=shelter_api;uid=root;pwd=epicodus;"
+        "DefaultConnection": "Server=localhost;Port=3306;database=shelter_api;uid=root;pwd=YourMySQLPasswordHere;"
       }
     }
    ```
-   - Open your terminal and run the command: `mysql -uroot -p<mysql_password>` (replace `<mysql_password>` with your MySQL password) to launch MySQL server
 5. To serve the local web app:
 
-- Navigate to `{Template.Solution/WeekFiveTemplate}` in your command line
-- Run the commands:
-  - `dotnet restore` to restore the dependencies that are listed in `{Template.csproj}`
-  - `dotnet add package Microsoft.EntityFrameworkCore -v 5.0.0`
-  - `dotnet add package Pomelo.EntityFrameworkCore.MySql -v 5.0.0-alpha.2`
-  - `dotnet add package Microsoft.EntityFrameworkCore.Proxies -v 5.0.0`
-  - `dotnet build` to build the project and its dependencies into a set of binaries
-  - `dotnet tool install --global dotnet-ef` to install EF Core tools
-  - `dotnet ef database update`
+- Navigate to `Shelter.Solution/Shelter` in your command line
+- Run the command: `dotnet ef database update`
 - Finally, run the command `dotnet run` to run the project!
 - Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
 
