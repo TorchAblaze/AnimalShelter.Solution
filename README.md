@@ -56,9 +56,9 @@ Base URL: `https://localhost:5000`
 ### HTTP Requests
 - GET `/api/animals`: returns all animals in the database
 - GET `/api/animals/{id}`: returns the animal with the matching ID, if applicable
-- POST `/api/animals` : creates a new instance of the animal class
-- PUT `/api/animals` : updates or edits an animal instance
-- DELETE `/api/animals` : deletes an animal 
+- POST `/api/animals`: creates a new instance of the animal class
+- PUT `/api/animals`: updates or edits an animal instance
+- DELETE `/api/animals`: deletes an animal 
 
 ## Known Bugs
 
