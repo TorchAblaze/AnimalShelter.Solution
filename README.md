@@ -77,7 +77,6 @@ _Please reach out through my GitHub account._
 - ASP.NET Core MVC
 - Entity Framework Core
 - MySQL
-- HTML5 with Razor syntax
 - Postman
 
 ### License
