@@ -49,6 +49,8 @@ An API that stores animal information for the pets available at an animal shelte
 6. Visit the application via web browser at: `localhost:5000/`
 
 ## API Documentation
+Use Postman to test POST, PUT, DELETE functionality for the API endpoints
+
 
 ## Endpoints
 Base URL: `https://localhost:5000`
@@ -72,11 +74,11 @@ _Please reach out through my GitHub account._
 
 - C#
 - .NET 5 SDK
-- ASP.NET Core MVC with Identity
+- ASP.NET Core MVC
 - Entity Framework Core
 - MySQL
-- Bootstrap
 - HTML5 with Razor syntax
+- Postman
 
 ### License
 
