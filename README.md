@@ -1,6 +1,6 @@
 # Animal Shelter API
 
-#### _Brief Project Description, 5/21/2021_
+#### _Animal Shelter API Database, 6/11/2021_
 
 #### By _**Tiffany Greathead**_
 
@@ -17,10 +17,11 @@ An API that stores animal information for the pets available at an animal shelte
 - A command line interface like Terminal or GitBash to set up and run the project
 - MySQL 8.0.19, following [these pinned installation instructions](https://web.archive.org/web/20210521163651/https://www.learnhowtoprogram.com/c-and-net/getting-started-with-c/installing-and-configuring-mysql)
 - A web browser to view and interact with the project
+- [Postman](https://www.postman.com)
 
 ### Installation
 
-1. Clone the repository: `$ git clone {clone link}`
+1. Clone the repository: `$ git clone https://github.com/TorchAblaze/AnimalShelter.Solution.git`
 2. Navigate to the `Shelter` directory on your computer
 3. Open with your preferred text editor to view the code base
 4. To setup a SQL database using MySQL:
@@ -42,13 +43,22 @@ An API that stores animal information for the pets available at an animal shelte
     }
    ```
 5. To serve the local web app:
-
 - Navigate to `Shelter.Solution/Shelter` in your command line
 - Run the command: `dotnet ef database update`
 - Finally, run the command `dotnet run` to run the project!
-- Note: `dotnet run` also restores and builds the project, so you can use this single command to start the console app
-
 6. Visit the application via web browser at: `localhost:5000/`
+
+## API Documentation
+
+## Endpoints
+Base URL: `https://localhost:5000`
+
+### HTTP Requests
+- GET `/api/animals`: returns all animals in the database
+- GET `/api/animals/{id}`: returns the animal with the matching ID, if applicable
+- POST `/api/animals` : creates a new instance of the animal class
+- PUT `/api/animals` : updates or edits an animal instance
+- DELETE `/api/animals` : deletes an animal 
 
 ## Known Bugs
 
