@@ -51,7 +51,6 @@ An API that stores animal information for the pets available at an animal shelte
 ## API Documentation
 Use Postman to test POST, PUT, DELETE functionality for the API endpoints
 
-
 ## Endpoints
 Base URL: `https://localhost:5000`
 
@@ -61,6 +60,11 @@ Base URL: `https://localhost:5000`
 - POST `/api/animals`: creates a new instance of the animal class
 - PUT `/api/animals`: updates or edits an animal instance
 - DELETE `/api/animals`: deletes an animal 
+
+## Swagger
+To explore the AnimalShelter API with Swagger:
+- Run the command `dotnet run` in the `Shelter` directory in your terminal
+- Input the URL: http://localhost:5000/index.html in your preferred browser
 
 ## Known Bugs
 
